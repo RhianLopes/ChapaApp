@@ -1,6 +1,6 @@
 # Chapa App
 
-Aplicativo com o objetivo de ser um MVP para uma funcionalidade dentro do aplicativo da Fretebras para caminhoneiros.
+O aplicativo tem como objetivo ser um MVP de uma funcionalidade nova de busca de fretes com inteligência artificial dentro do aplicativo da Fretebras, proporcionando uma nova experiência na hora de buscar fretes.
 
 ## Demo
 
