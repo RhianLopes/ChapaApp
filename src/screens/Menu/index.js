@@ -6,7 +6,7 @@ import styles from './styles'
 export function MenuScreen({ navigation }) {
 
   function handleChapa() {
-    navigation.navigate('Chapa')
+    setTimeout(() => navigation.navigate('Chapa'), 100)
   }
 
   return (

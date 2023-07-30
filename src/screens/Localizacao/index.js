@@ -7,11 +7,11 @@ import styles from './styles'
 export function LocalizacaoScreen({ navigation }) {
 
   function handleBack() {
-    navigation.navigate('Chapa')
+    setTimeout(() => navigation.navigate('Chapa'), 100)
   }
 
   function handleNext() {
-    navigation.navigate('Veiculo')
+    setTimeout(() => navigation.navigate('Veiculo'), 100)
   }
 
   return (

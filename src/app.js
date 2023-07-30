@@ -14,7 +14,8 @@ import {
     LocalizacaoScreen,
     VeiculoScreen,
     ResultadoScreen,
-    DetalheFreteScreen
+    DetalheFreteScreen,
+    CarregamentoScreen
   } from './screens'
 
 const Stack = createStackNavigator()
@@ -24,7 +25,7 @@ export function MenuTabNavigation({ navigation, route }) {
   
     return (
         <Tab.Navigator 
-            initialRouteName='NewAttendance'
+            initialRouteName='Menu'
             screenOptions={{ 
                 headerShown: false,
             }}
@@ -117,6 +118,7 @@ export default function App() {
                 <Stack.Screen component={VeiculoScreen} name='Veiculo' />
                 <Stack.Screen component={ResultadoScreen} name='Resultado' />
                 <Stack.Screen component={DetalheFreteScreen} name='DetalheFrete' />
+                <Stack.Screen component={CarregamentoScreen} name='Carregamento' />
                 <Stack.Screen component={MenuTabNavigation} name='MenuTabNavigation' />
             </Stack.Navigator>
         </NavigationContainer>

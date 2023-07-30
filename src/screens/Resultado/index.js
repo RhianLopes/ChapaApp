@@ -32,11 +32,11 @@ export function ResultadoScreen({ navigation }) {
   ]
 
   function handleBack() {
-    navigation.navigate('Veiculo')
+    setTimeout(() => navigation.navigate('Veiculo'), 100)
   }
 
   function handleNext() {
-    navigation.navigate('DetalheFrete')
+    setTimeout(() => navigation.navigate('DetalheFrete'), 100)
   }
 
   return (

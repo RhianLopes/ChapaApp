@@ -39,6 +39,11 @@ export default StyleSheet.create({
     },
     tags: {
         marginTop: 10,
+    },
+    exit: {
+        position: 'absolute',
+        top: 40,
+        left: 20,
     }
 });
   

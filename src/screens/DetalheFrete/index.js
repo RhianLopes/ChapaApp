@@ -12,16 +12,9 @@ export function DetalheFreteScreen({ navigation }) {
 
   return (
     <View>
-      <Image 
-          style={{ 
-            position: 'absolute',
-            width: width * 0.5,
-            height: width,
-          }} 
-          source={require('../../assets/detalhes-frete.png')}
-        />
+      
       <ScrollView contentContainerStyle={styles.container}>
-        
+      <Image source={require('../../assets/detalhe.png')}/>
       </ScrollView>
       <TouchableOpacity 
       style={{ 
@@ -29,7 +22,7 @@ export function DetalheFreteScreen({ navigation }) {
         alignItems: 'center',
         position: 'absolute',
         alignSelf: 'center',
-        bottom: 30,
+        bottom: 20,
         width: '90%',
         padding: 15,
         backgroundColor: '#08C45E',

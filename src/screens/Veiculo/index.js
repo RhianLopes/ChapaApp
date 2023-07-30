@@ -9,11 +9,11 @@ export function VeiculoScreen({ navigation }) {
   const [checked, setChecked] = useState('first')
 
   function handleBack() {
-    navigation.navigate('Localizacao')
+    setTimeout(() => navigation.navigate('Localizacao'), 100)
   }
 
   function handleNext() {
-    navigation.navigate('Resultado')
+    setTimeout(() => navigation.navigate('Carregamento'), 100)
   }
 
   return (
