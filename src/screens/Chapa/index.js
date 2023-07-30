@@ -20,14 +20,15 @@ export function ChapaScreen({ navigation }) {
       onPress={handleBack}>
         <Image source={require('../../assets/x.png')}/>
       </TouchableOpacity>
-      <Image source={require('../../assets/chapa.png')}/>
+      <Image style={{ borderRadius: 50}} source={require('../../assets/Sign.png')}/>
       <Text style={styles.title}>Olá! Eu sou o Chapa</Text>
-      <Text style={styles.description}>Sou a nova ferramenta Fretebras que vai te ajudar a encontrar um frete sem cilada! A nossa busca vai ser para:</Text>
-      <Image style={styles.tags} resizeMode={'cover'} source={require('../../assets/tags.png')}/>
+      <Text style={styles.description}>A nova ferramenta Fretebras que vai te ajudar a encontrar bons fretes sem cilada!</Text>
+      <Text style={styles.description}>A nossa busca vai ser para:</Text>
+      <Image style={styles.tags} resizeMode={'cover'} source={require('../../assets/iten-list.png')}/>
       <TouchableOpacity 
       style={styles.buttonTest}
       onPress={handleTest}>
-        <Text style={styles.labelTest}>Testar o Chapa</Text>
+        <Text style={styles.labelTest}>Iniciar busca</Text>
       </TouchableOpacity>
     </View>
   )

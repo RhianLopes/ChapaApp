@@ -12,9 +12,8 @@ export function DetalheFreteScreen({ navigation }) {
 
   return (
     <View>
-      
       <ScrollView contentContainerStyle={styles.container}>
-      <Image source={require('../../assets/detalhe.png')}/>
+        <Image style={{ height: 3200, width: width, resizeMode: 'contain'}} source={{ uri: 'https://cdn.discordapp.com/attachments/1134591822602178651/1135251053374361662/Detalhe_do_frete.png'}}/>
       </ScrollView>
       <TouchableOpacity 
       style={{ 
@@ -22,7 +21,7 @@ export function DetalheFreteScreen({ navigation }) {
         alignItems: 'center',
         position: 'absolute',
         alignSelf: 'center',
-        bottom: 20,
+        bottom: 36,
         width: '90%',
         padding: 15,
         backgroundColor: '#08C45E',

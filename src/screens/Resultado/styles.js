@@ -6,6 +6,7 @@ export default StyleSheet.create({
     container: {
         backgroundColor: '#E04747',
         alignItems: 'center',
+        paddingBottom: 40
     },
     header: {
         fontSize: 16,
@@ -39,7 +40,7 @@ export default StyleSheet.create({
     containerCardTitle: {
         flexDirection: 'row',
         width: '100%',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-end',
         alignItems: 'center'
     },
     containerCardDestiny: {
@@ -56,7 +57,7 @@ export default StyleSheet.create({
     },
     containerCardFlags: {
         flexDirection: 'row',
-        marginTop: 15
+        marginTop: 15,
     },
     containerCardFlag: {
         padding: 5,
@@ -86,7 +87,8 @@ export default StyleSheet.create({
     },
     containerCardButtons: {
         width: '100%',
-        alignItems: 'flex-end',
+        flexDirection: 'row',
+        justifyContent: 'space-around'
     },
     containerCardButton: {
         padding: 10,
@@ -96,8 +98,20 @@ export default StyleSheet.create({
         backgroundColor: '#E04747',
         marginRight: 10
     },
+    containerCardNoButton: {
+        padding: 12,
+        borderRadius: 10,
+        width: '40%',
+        alignItems: 'center',
+        backgroundColor: '#FFFFFF',
+        marginRight: 10
+    },
     containerCardButtonLabel: {
         color: '#FFFFFF',
+        fontWeight: '500'
+    },
+    containerCardButtonNoLabel: {
+        color: '#E04747',
         fontWeight: '500'
     },
     buttonAllFreights: {
@@ -108,6 +122,27 @@ export default StyleSheet.create({
     labelAllFreights: {
         color: '#FFFFFF',
         fontSize: 16
-    }
+    },
+    containerFlag: {
+        backgroundColor: '#0AB15F',
+        borderRadius: 8,
+        padding: 5,
+        marginRight: 20
+    },
+    containerFlagLabel: {
+        color: '#FFFFFF',
+        fontSize: 12,
+        fontWeight: 'bold'
+    },
+    containerNoFlag: {
+        backgroundColor: '#DDDFE4',
+        borderRadius: 8,
+        padding: 5
+    },
+    containerNoFlagLabel: {
+        color: '#BABEC9',
+        fontSize: 12,
+        fontWeight: 'bold'
+    },
 });
   

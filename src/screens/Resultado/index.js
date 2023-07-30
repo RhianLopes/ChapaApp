@@ -7,27 +7,33 @@ export function ResultadoScreen({ navigation }) {
   const cards = [
     {
       id: 1,
+      amountFreightsToReturn: 12,
+      uri: 'https://cdn.discordapp.com/attachments/1134591822602178651/1135261030923120752/image_5314.png',
       origin: 'São José do Vale do Rio Preto, RJ',
       destiny: 'Fortaleza, CE',
-      km: '440km',
+      km: '2.832 km',
       content: 'Cimento',
-      price: 'R$ 2.500,00'
+      price: 'R$ 4.500,00'
     },
     {
       id: 2,
+      amountFreightsToReturn: 8,
+      uri: 'https://cdn.discordapp.com/attachments/1134591822602178651/1135261202134601889/image_5314.png',
       origin: 'São José do Vale do Rio Preto, RJ',
-      destiny: 'Belo Horizonte, MG',
-      km: '350km',
-      content: 'Cimento',
-      price: 'R$ 2.200,00'
+      destiny: 'Porto Alegre, RS',
+      km: '1.433 km',
+      content: 'Madeira',
+      price: 'R$ 3.500,00'
     },
     {
       id: 3,
-      origin: 'São José do Vale do Rio Preto, RJ',
-      destiny: 'Curitiba, PR',
-      km: '880km',
-      content: 'Cimento',
-      price: 'R$ 3.500,00'
+      amountFreightsToReturn: 0,
+      uri: 'https://cdn.discordapp.com/attachments/1134591822602178651/1135261409052197097/image_5314.png',
+      origin: 'Uberlândia, MG',
+      destiny: 'Primavera do leste, MT',
+      km: '1.003 km',
+      content: 'Piso',
+      price: 'R$ 2.500,00'
     },
   ]
 
@@ -37,6 +43,16 @@ export function ResultadoScreen({ navigation }) {
 
   function handleNext() {
     setTimeout(() => navigation.navigate('DetalheFrete'), 100)
+  }
+
+  function getFlag(item) {
+    if (item.amountFreightsToReturn > 0) {
+      return (
+        <View style={styles.containerFlag}>
+          <Text style={styles.containerFlagLabel}>{item.amountFreightsToReturn} FRETES DE RETORNO DISPONÍVEIS</Text>
+        </View>
+      )
+    }
   }
 
   return (
@@ -52,8 +68,8 @@ export function ResultadoScreen({ navigation }) {
         return (
           <View style={styles.card} key={item.id}>
             <View style={styles.containerCardTitle}>
-              <Image source={require('../../assets/flag.png')}/>
-              <Image source={require('../../assets/company.png')}/>
+              {getFlag(item)}
+              <Image style={{ width: 80, height: 40, resizeMode: 'cover'}} source={{ uri: item.uri}}/>
             </View>
             <View style={styles.containerCardDestiny}>
               <Image style={styles.imageCardTrip} source={require('../../assets/icone-trajeto.png')}/>
@@ -77,16 +93,16 @@ export function ResultadoScreen({ navigation }) {
             <Text style={styles.containerCardFlagLabel}>Pedágio incluso no valor</Text>
             <View style={styles.line}/>
             <View style={styles.containerCardButtons}>
+              <TouchableOpacity style={styles.containerCardNoButton} onPress={handleNext}>
+                <Text style={styles.containerCardButtonNoLabel}>Não interessa</Text>
+              </TouchableOpacity>
               <TouchableOpacity style={styles.containerCardButton} onPress={handleNext}>
-                <Text style={styles.containerCardButtonLabel}>Combinar frete</Text>
+                <Text style={styles.containerCardButtonLabel}>Ver detalhes</Text>
               </TouchableOpacity>
             </View>
           </View>
         )
       })}
-      <TouchableOpacity style={styles.buttonAllFreights} onPress={handleNext}>
-        <Text style={styles.labelAllFreights}>Ver todos os fretes (230)</Text>
-      </TouchableOpacity>
     </ScrollView>
   )
 }

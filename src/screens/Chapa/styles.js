@@ -22,6 +22,12 @@ export default StyleSheet.create({
         textAlign: 'center',
         color: '#636B7E'
     },
+    description: {
+        fontSize: 18,
+        width: width * 0.90,
+        textAlign: 'center',
+        color: '#636B7E'
+    },
     buttonTest: {
         backgroundColor: '#E04747',
         height: 50,

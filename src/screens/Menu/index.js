@@ -22,10 +22,10 @@ export function MenuScreen({ navigation }) {
         alignItems: 'center',
         position: 'absolute',
         right: 20,
-        bottom: 30
+        bottom: 30,
       }} 
       onPress={handleChapa}>
-        <Image source={require('../../assets/chapa.png')}/>
+        <Image style={{ borderRadius: 50}} source={require('../../assets/Sign.png')}/>
       </TouchableOpacity>
     </View>
   )

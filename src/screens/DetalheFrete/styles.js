@@ -11,6 +11,6 @@ export default StyleSheet.create({
         color: '#FFFFFF',
         marginLeft: 10,
         fontSize: 18
-    }
+    },
 });
   
