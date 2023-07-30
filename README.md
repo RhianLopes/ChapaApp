@@ -20,25 +20,23 @@ O aplicativo tem como objetivo ser um MVP de uma funcionalidade nova de busca de
 npm i
 ```
 
-Feito isso, basta executar 
+O aplicativo estará em execução, para acessá-lo sugiro a utilização de um emulador android no Android Studio.
 
-```shell
-npx expo start
-```
+Passo a passo da expo para configuração do Android Studio:
+https://docs.expo.dev/workflow/android-studio-emulator/
 
-O aplicativo estará em execução, para acessá-lo existem algumas formas, via emulador ou via aplicativo do expo estando na mesma rede onde está em execução o projeto.
+Configurado o Android Studio, utilize o dispositivo Pixel_3a_API_34_extension_level_7_x86_64 com essas configurações.
 
-Links de passo a passo do expo para execução do projeto:
-- https://docs.expo.dev/tutorial/create-your-first-app/#run-the-app-on-mobile-and-web
-- https://docs.expo.dev/workflow/android-studio-emulator/
-- https://docs.expo.dev/workflow/ios-simulator/
-
-Para o desenvolvimento foi utilizado um emulador via Android Studio, onde foi necessário somente instalar o Android Studio e executar o emulador
-
-Exportar a localização do SDK em seu terminal
+Por fim, é necessário exportar a localização do SDK em seu terminal, executando o seguinte comando informando o caminho do SDK em seu computador:
 
 ```shell
 export ANDROID_HOME=/home/{SEU_USUARIO}/Android/Sdk
 ```
 
-Executar no terminal o server do expo e pressionar a letra “a” para abrir o aplicativo no emulador.
+Com isso podemos executar o servidor do expo a partir do seguinte comando:
+
+```shell
+npx expo start
+```
+
+Com o servidor em execução no terminal, pressione a letra “a”, que servirá como comando para abrir em seu emulador o aplicativo.
