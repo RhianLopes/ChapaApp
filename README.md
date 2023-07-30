@@ -2,6 +2,10 @@
 
 Aplicativo com o objetivo de ser um MVP para uma funcionalidade dentro do aplicativo da Fretebras para caminhoneiros.
 
+## Demo
+
+[![](https://img.youtube.com/vi/pFyDTbWgkxg/0.jpg)](https://youtube.com/shorts/pFyDTbWgkxg)
+
 ## Tecnologias
 
 - JavaScript
