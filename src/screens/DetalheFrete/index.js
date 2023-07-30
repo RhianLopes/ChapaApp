@@ -7,7 +7,8 @@ import styles from './styles'
 export function DetalheFreteScreen({ navigation }) {
 
   function handleChapa() {
-    navigation.navigate('Chapa')
+    navigation.navigate('MenuTabNavigation')
+    //TODO: send notification to whatsapp
   }
 
   return (

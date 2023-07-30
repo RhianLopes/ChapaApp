@@ -14,6 +14,7 @@ export function VeiculoScreen({ navigation }) {
 
   function handleNext() {
     setTimeout(() => navigation.navigate('Carregamento'), 100)
+    //TODO: call to api find and analysis the best freights by prompt
   }
 
   return (
