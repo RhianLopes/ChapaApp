@@ -37,7 +37,8 @@ Para o desenvolvimento foi utilizado um emulador via Android Studio, onde foi ne
 
 Exportar a localização do SDK em seu terminal
 
-
+```shell
 export ANDROID_HOME=/home/{SEU_USUARIO}/Android/Sdk
+```
 
 Executar no terminal o server do expo e pressionar a letra “a” para abrir o aplicativo no emulador.
